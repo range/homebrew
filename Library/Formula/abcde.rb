@@ -14,6 +14,6 @@ class Abcde <Formula
 
   def install
     inreplace 'Makefile', '-o 0', ''
-    system "export prefix=/usr/local/Cellar/abcde/2.4.2;export DESTDIR=$prefix;make -e install"
+    system "export prefix=#{prefix};export DESTDIR=$prefix;make -e install"
   end
 end
