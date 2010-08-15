@@ -12,6 +12,6 @@ class CdDiscid <Formula
   end
 
   def install
-    system "export prefix=/usr/local/Cellar/cd-discid/1.1; make -e install"
+    system "export prefix=#{prefix}; make -e install"
   end
 end
